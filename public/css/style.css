@@ -1,0 +1,65 @@
+@-webkit-keyframes fade{
+		    0%   { opacity: 0; }
+		    10%  { opacity: 0.8; }
+		    100% { opacity: 0; }
+		}
+		@-webkit-keyframes fall{
+		   	from {top: 50px;}
+			to {top: 470px;}
+		}
+		@-webkit-keyframes accumulate{
+		   	from {height: 0px; opacity: 0}
+			to {height: 20px; opacity: .75;}
+		}
+		@-webkit-keyframes spin{
+		    0%   { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+		    100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+		}
+		#snow div {
+			position: absolute;
+			top: -400px;
+			-webkit-animation-name: fall, fade, spin;			
+			-webkit-animation-iteration-count: 1; /* use 0 to infinite */
+			-webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+			-webkit-animation-timing-function: ease-in;
+		}
+		.snowflake {
+			color: #aaa;
+			font-size: 3em;
+			position: absolute;	
+		}
+		#snowflakef1 {
+			font-size: 5em;
+			left: 5%;
+			-webkit-animation-duration: 5s;	/* set duration indivisually */
+		}
+		#snowflakef2 {
+			font-size: 4em;
+			left: 20%;
+			-webkit-animation-duration: 7s;	
+		}
+		#snowflakef3 {
+			font-size: 3em;
+			left: 30%;
+			-webkit-animation-duration: 8s;	
+		}
+		#snowflakef4 {
+			font-size: 7em;
+			left: 50%;
+			-webkit-animation-duration: 6s;	
+		}
+		#snowflakef5 {
+			font-size: 2em;
+			left: 70%;
+			-webkit-animation-duration: 9s;	
+		}
+		#snowflakef6 {
+			font-size: 4em;
+			left: 80%;
+			-webkit-animation-duration: 5s;	
+		}
+		#snowflakef7 {
+			font-size: 3em;
+			left: 90%;
+			-webkit-animation-duration: 4s;	
+		}
